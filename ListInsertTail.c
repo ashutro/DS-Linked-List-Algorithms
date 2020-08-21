@@ -51,7 +51,7 @@ void create(int n)
     
 }
 void InsertLast()
-{   int item;
+{   int value;
     struct  Node *newNode,*postion,*head;
     postion = first;
     newNode = (struct Node *)malloc(sizeof(struct Node));
@@ -63,8 +63,8 @@ void InsertLast()
     else
     {   
         printf("Enter the element insert at Last:    ");
-        scanf("%d",&item);
-        newNode->data=item;
+        scanf("%d",&value);
+        newNode->data=value;
         while (postion != NULL)
         { 
             head = postion;
